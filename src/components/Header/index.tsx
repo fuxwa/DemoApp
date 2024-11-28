@@ -27,7 +27,7 @@ const Header: React.FC<Props> = (props) => {
                     : <View style={{ width: width * 1 / 10, height: 1, opacity: 0 }} />
             }
             <View style={{ width: width * 8 / 10, alignItems: "center" }}>
-                <Text type='subheading' style={{ color: "#212B36" }} numberOfLines={1}>{text}</Text>
+                <Text type='subheading' style={{ color: "#212B36", right: scale(18) }} numberOfLines={1}>{text}</Text>
             </View>
 
             {

@@ -3,6 +3,7 @@ import { routes } from 'navigation/routes';
 import React from 'react';
 import { HomeScreen, SettingsScreen } from 'screens';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import HomeStack from 'navigation/homeStack';
 
 const TabNavigation = () => {
     const Tab = createBottomTabNavigator();
@@ -21,13 +22,12 @@ const TabNavigation = () => {
                     iconName = focused ? 'cog-outline' : 'cog-outline';
                 }
 
-                // You can return any component that you like here!
                 return <Ionicons name={iconName ?? "home-outline"} size={size} color={color} />;
             },
             tabBarActiveTintColor: 'tomato',
             tabBarInactiveTintColor: 'gray',
         })}>
-            <Tab.Screen name={"Home"} component={HomeScreen} />
+            <Tab.Screen name={"Home"} component={HomeStack} />
             <Tab.Screen name={"Settings"} component={SettingsScreen} />
         </Tab.Navigator>
     )
