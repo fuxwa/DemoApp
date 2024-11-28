@@ -1,6 +1,5 @@
-# My React Native Template
-
-Bộ mã nguồn chuẩn của dự án mới
+# DemoApp
+DemoApp
 
 ## Cấu trúc thư mục
 ```
@@ -31,7 +30,7 @@ project-name/
 * React Native
 * TypeScript (hoặc JavaScript)
 * React Navigation (hoặc thư viện điều hướng khác)
-* Redux (hoặc MobX, Context API,...)
+* Recoijs
 * ... (Các thư viện và công cụ khác)
 
 ## Cài đặt và chạy dự án
