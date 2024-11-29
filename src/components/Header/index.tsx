@@ -3,6 +3,7 @@ import { Text } from 'components';
 import { Navigator, routes } from 'navigation';
 import React from 'react';
 import { Platform, StyleSheet, TouchableOpacity, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { colors, scale, width } from 'utils';
 interface Props {
@@ -15,8 +16,10 @@ interface Props {
 const Header: React.FC<Props> = (props) => {
     const { text, back, onBack, renderRight } = props;
     const navigation = useNavigation();
+    const insets = useSafeAreaInsets();
+
     return (
-        <View style={styles.container}>
+        <View style={[styles.container, { paddingTop: insets.top }]}>
             {
                 back ?
                     <TouchableOpacity style={{ width: width * 1 / 10, alignItems: "center" }} onPress={() => {

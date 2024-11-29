@@ -1,21 +1,21 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import {
-  SafeAreaView,
   StatusBar,
   StyleSheet,
   View
 } from 'react-native';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { Layout } from 'screens';
 
 function App(): React.JSX.Element {
+
   return (
-    <SafeAreaView style={{ flex: 1 }} >
-      <StatusBar barStyle={'dark-content'} backgroundColor={'white'} translucent />
+    <SafeAreaProvider >
       <NavigationContainer>
         <Layout />
       </NavigationContainer>
-    </SafeAreaView>
+    </SafeAreaProvider>
   );
 }
 
