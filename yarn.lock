@@ -2047,6 +2047,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@egjs/hammerjs@npm:^2.0.17":
+  version: 2.0.17
+  resolution: "@egjs/hammerjs@npm:2.0.17"
+  dependencies:
+    "@types/hammerjs": ^2.0.36
+  checksum: 8945137cec5837edd70af3f2e0ea621543eb0aa3b667e6269ec6485350f4d120c2434b37c7c30b1cf42a65275dd61c1f24626749c616696d3956ac0c008c4766
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -3263,6 +3272,13 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: 79d746a8f053954bba36bd3d94a90c78de995d126289d656fb3271dd9f1229d33f678da04d10bce6be440494a5a73438e2e363e92802d16b8315b051036c5256
+  languageName: node
+  linkType: hard
+
+"@types/hammerjs@npm:^2.0.36":
+  version: 2.0.46
+  resolution: "@types/hammerjs@npm:2.0.46"
+  checksum: caba6ec788d19905c71092670b58514b3d1f5eee5382bf9205e8df688d51e7857b7994e2dd7aed57fac8977bdf0e456d67fbaf23440a4385b8ce25fe2af1ec39
   languageName: node
   linkType: hard
 
@@ -4835,6 +4851,47 @@ __metadata:
   languageName: node
   linkType: hard
 
+"demoapp@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "demoapp@workspace:."
+  dependencies:
+    "@babel/core": ^7.20.0
+    "@babel/preset-env": ^7.20.0
+    "@babel/runtime": ^7.20.0
+    "@react-native-community/async-storage": ^1.12.1
+    "@react-native/babel-preset": 0.74.86
+    "@react-native/eslint-config": 0.74.86
+    "@react-native/metro-config": 0.74.86
+    "@react-native/typescript-config": 0.74.86
+    "@react-navigation/bottom-tabs": ^6.6.1
+    "@react-navigation/native": ^6.1.18
+    "@react-navigation/native-stack": ^6.11.0
+    "@types/jest": ^29.5.12
+    "@types/lodash": ^4.17.7
+    "@types/react": ^18.2.6
+    "@types/react-native-vector-icons": ^6.4.18
+    "@types/react-test-renderer": ^18.0.0
+    babel-jest: ^29.6.3
+    babel-plugin-module-resolver: ^5.0.2
+    eslint: ^8.19.0
+    jest: ^29.7.0
+    prettier: 2.8.8
+    react: 18.2.0
+    react-native: 0.74.5
+    react-native-fs: ^2.20.0
+    react-native-gesture-handler: ^2.21.2
+    react-native-linear-gradient: ^2.8.3
+    react-native-reanimated: ^3.16.3
+    react-native-safe-area-context: ^4.10.8
+    react-native-screens: ^3.34.0
+    react-native-svg: ^15.9.0
+    react-native-vector-icons: ^10.1.0
+    react-test-renderer: 18.2.0
+    rn-fetch-blob: ^0.12.0
+    typescript: 5.0.4
+  languageName: unknown
+  linkType: soft
+
 "denodeify@npm:^1.2.1":
   version: 1.2.1
   resolution: "denodeify@npm:1.2.1"
@@ -6144,6 +6201,15 @@ __metadata:
   dependencies:
     source-map: ^0.7.3
   checksum: b5f874eaa65b70d88df7a4ce3b20d73312bb0bc73410f1b63d708f02e1c532ae16975da84e23b977eab8592ac95d7e6fc0c4094c78604fd0a092ed886c62aa7a
+  languageName: node
+  linkType: hard
+
+"hoist-non-react-statics@npm:^3.3.0":
+  version: 3.3.2
+  resolution: "hoist-non-react-statics@npm:3.3.2"
+  dependencies:
+    react-is: ^16.7.0
+  checksum: b1538270429b13901ee586aa44f4cc3ecd8831c061d06cb8322e50ea17b3f5ce4d0e2e66394761e6c8e152cd8c34fb3b4b690116c6ce2bd45b18c746516cb9e8
   languageName: node
   linkType: hard
 
@@ -8119,46 +8185,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"myapptemplate@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "myapptemplate@workspace:."
-  dependencies:
-    "@babel/core": ^7.20.0
-    "@babel/preset-env": ^7.20.0
-    "@babel/runtime": ^7.20.0
-    "@react-native-community/async-storage": ^1.12.1
-    "@react-native/babel-preset": 0.74.86
-    "@react-native/eslint-config": 0.74.86
-    "@react-native/metro-config": 0.74.86
-    "@react-native/typescript-config": 0.74.86
-    "@react-navigation/bottom-tabs": ^6.6.1
-    "@react-navigation/native": ^6.1.18
-    "@react-navigation/native-stack": ^6.11.0
-    "@types/jest": ^29.5.12
-    "@types/lodash": ^4.17.7
-    "@types/react": ^18.2.6
-    "@types/react-native-vector-icons": ^6.4.18
-    "@types/react-test-renderer": ^18.0.0
-    babel-jest: ^29.6.3
-    babel-plugin-module-resolver: ^5.0.2
-    eslint: ^8.19.0
-    jest: ^29.7.0
-    prettier: 2.8.8
-    react: 18.2.0
-    react-native: 0.74.5
-    react-native-fs: ^2.20.0
-    react-native-linear-gradient: ^2.8.3
-    react-native-reanimated: ^3.16.3
-    react-native-safe-area-context: ^4.10.8
-    react-native-screens: ^3.34.0
-    react-native-svg: ^15.9.0
-    react-native-vector-icons: ^10.1.0
-    react-test-renderer: 18.2.0
-    rn-fetch-blob: ^0.12.0
-    typescript: 5.0.4
-  languageName: unknown
-  linkType: soft
-
 "nanoid@npm:^3.1.23":
   version: 3.3.7
   resolution: "nanoid@npm:3.3.7"
@@ -8897,7 +8923,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.13.0, react-is@npm:^16.13.1":
+"react-is@npm:^16.13.0, react-is@npm:^16.13.1, react-is@npm:^16.7.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
@@ -8924,6 +8950,21 @@ __metadata:
     react-native-windows:
       optional: true
   checksum: 0be9bb9a5c13b501d0a3006efc3aa5c0b5b211456ee04718297f4e522532f3527f1daa220bd67d3b82d819ed8fdab8f64b7d6e0d7b768c1fd1d8ec9122d94316
+  languageName: node
+  linkType: hard
+
+"react-native-gesture-handler@npm:^2.21.2":
+  version: 2.21.2
+  resolution: "react-native-gesture-handler@npm:2.21.2"
+  dependencies:
+    "@egjs/hammerjs": ^2.0.17
+    hoist-non-react-statics: ^3.3.0
+    invariant: ^2.2.4
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 0a42cedb8860a326b465085d0f7622ba03f038b0f0bdd1b1fe5703e58d62cb08bfb82a686c069a1a1410705c2ae0d82971b0449d83796fdd6d071131cf88e68b
   languageName: node
   linkType: hard
 
